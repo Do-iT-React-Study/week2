@@ -3,19 +3,26 @@ import "./App.css";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Say from "./Say";
+import EventPrac from "./EventPrac";
 
 function App() {
-  return <div>hello!</div>;
+  return (
+    <div>
+      {/* <MyComponent name="ccc">react</MyComponent> */}
+      {/* <Counter /> */}
+      {/* <Say /> */}
+      <EventPrac />
+    </div>
+  );
 }
 
 export default App;
 
 //class형
-/*
-class App extends Component {
-  render() {
-    const name = "react";
-    return <div>{name}</div>;
-  }
-}
-*/
+
+// class App extends Component {
+//   render() {
+//     const name = "react";
+//     return <div>{name}</div>;
+//   }
+// }
