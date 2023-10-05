@@ -9,7 +9,7 @@ class Counter extends Component {
     //state의 초깃값 설정
     this.state = {
       number: 0,
-      //fixedNumber: 0,
+      fixedNumber: 5,
     };
   }
 
@@ -18,14 +18,17 @@ class Counter extends Component {
 
   render() {
     //state를 조회할 때는 this.state로 조회
-    const { number } = this.state;
+    const { number, fixedNumber } = this.state;
     return (
       <div>
         <h1>{number}</h1>
-        <h2>바뀌지 않는 값 : </h2>
+        <h2>바뀌지 않는 값 : {fixedNumber}</h2>
+        <button>hi</button>
         <button
           onClick={() => {
             this.setState({ number: number + 1 });
+            console.log("바뀐 state:", number);
+            alert("state가 바뀜");
           }}
         >
           +1
