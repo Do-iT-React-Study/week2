@@ -38,7 +38,7 @@ const EventPrac = () => {
       value={username}
       onChange={onChangeUsername}
          />
-         <br/>
+         <br/>  
       <input 
       type="text" 
       name = "message" 

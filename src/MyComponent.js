@@ -26,7 +26,6 @@ MyComponent.defaultProps = {
 MyComponent.propTypes = {
   name : PropTypes.string,
 
-
   favoriteNumber: PropTypes.number.isRequired,
 }
 
